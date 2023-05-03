@@ -6,7 +6,7 @@ from reportlab.lib.pagesizes import A4
 # estabelecer conexão com o banco Access
 conn_str = (
     r"DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};"
-    r"DBQ="+DB
+    r"DBQ="+DB + r"\base.mdb"
     )
   
 conn = pyodbc.connect(conn_str)

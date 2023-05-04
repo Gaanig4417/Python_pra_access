@@ -25,8 +25,12 @@ for row in rows:
     Id, NomeProfissional = row
     cnv.drawString(x, y, f"ID: {Id}")
     cnv.drawString(x, y-20, f"Nome: {NomeProfissional}")
-    y -= 60
-
+    
+#Criação de retângulos e estão separados por localização
+    cnv.rect(48,745,30,19)
+    cnv.rect(48,723,90,19)
+    
+    
 
 cnv.save()
 
